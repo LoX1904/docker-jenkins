@@ -18,7 +18,7 @@ RUN export PATH=$PATH:/opt/gradle/gradle-4.10.3/bin
 RUN export PATH=$PATH:/opt/maven/apache-maven-3.6.0-bin/bin/
 RUN export PATH=$PATH:/opt/ant/apache-ant-1.10.5/bin/
 RUN mkdir /var/logs
-
+RUN rm apache-ant-1.10.5-bin.zip apache-maven-3.6.0-bin.zip gradle-4.10.2-all.zip
 ENV JENKINS_USER admin
 ENV JENKINS_PASS admin
 
