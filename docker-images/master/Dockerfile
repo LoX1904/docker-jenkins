@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:latest
 
-RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator  build-name-setter credentials-binding timestamper sonarqube build-pipeline-plugin jenkins-multijob-plugin subversion
+RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator build-name-setter credentials-binding timestamper sonar build-pipeline-plugin jenkins-multijob-plugin subversion
 
 RUN apt-get update 
 RUN apt-get install wget -y
